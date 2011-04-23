@@ -21,7 +21,10 @@
 
 \newcommand{\lieu}[1]{{#1}\ }
 \newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\projet}[2]{{#1} \textbf{#2}\ }
 \newcommand{\comment}[1]{\textsl{#1}\ }
+\newcommand{\group}[1]{\hspace{1em}\textsl{#1}\ }
+\newcommand{\hs}{\hspace{1.6em}}
 
 
 \begin{document}
@@ -29,93 +32,110 @@
 \hspace{1.5cm}
 \begin{adresse}
 	Gaëtan HARTER\\
-	7, rue Casimir Brenier\\
-	38000 Grenoble\\
+	40, rue Marcellin Berthelot\\
+	26\,000 Valence\\
 	\vspace{3pt}
-	Tel. : 06 85 33 33 22\\
-	E-mail : \texttt{hartergaetan@gmail.com}
+	Tel.~:\,06~85~33~33~22\\
+	E-mail~:\,\texttt{hartergaetan@gmail.com}
 \end{adresse}
 \begin{etatcivil}
 	Né le 13 Janvier 1989\\
 	Nationalité Française\\
-	Mobilité internationale\\
+	Mobilité: France et pays anglophones ou germanophones\\
 	Permis B
 \end{etatcivil}
 \hspace{0.5cm}
 \end{chapeau}
 \begin{center}
-	\textbf{\Large 3$^{\grave{e}me}$ année E\textsc{nsimag}\\}
-	\textbf{\large Ingénieur systèmes et logiciels embarqués\\}
+	\textbf{\Large Ingénieur en informatique\\}
+	\textbf{\large Grenoble INP - Ensimag\\}
+	\textbf{\large Spécialité systèmes et logiciels embarqués\\}
 	\vspace{0.2cm}
-	\textbf{\large Stage de fin d'étude - De février à juin.}
+	\textbf{\large Premier emploi - À partir de septembre 2011.}
 \end{center}
+
+
+
 	%%%%%%%%%%%%%%%%%%
 	% Bloc rubriques %
 	%%%%%%%%%%%%%%%%%%
 \begin{rubriquetableau}[2.5cm]{Formation}
 2008~--~2011
-			& \activite{Grenoble INP - E\textsc{nsimag} - Filière systèmes et logiciels embarqués}
-			\comment{\newline Architecture, Programmation concurrente, Système d'exploitation}
-			\lieu{\newline École nationale supérieure d'informatique et de mathématiques appliquées }\\
+			& \activite{Grenoble INP - Ensimag - Filière systèmes et logiciels embarqués}
+			\comment{\newline Architecture des systèmes sur puce, programmation concurrente, sécurité, tolérance aux fautes, systèmes distribués, systèmes d'exploitation, temps réel}
+			\lieu{\newline École nationale supérieure d'informatique et de mathématiques appliquées} \\
 
 2006~--~2008
 			& \activite{Classe préparatoire aux Grandes Écoles}
 			\comment{\newline Math, physique, sciences de l'ingénieur et informatique}
-			\lieu{\newline Lycée Kleber, Strasbourg 67}\\
+			\lieu{\newline Lycée Kleber, Strasbourg 67} \\
 2006
 			& \activite{Bac Scientifique -- Mathématiques et sciences de l'ingénieur -- Mention Bien}
 \end{rubriquetableau}
 
+
+
 \begin{rubriquetableau}[2.5cm]{Activités professionnalisantes}
-2010\textsl{ - 4 mois}  & \activite{Projet~:\,Pilote Linux de contrôleur réseau embarqué sur carte programmable}
-			\comment{\newline Projet en binôme. En cours.}\\
+2010\textsl{ - 5 mois}  & \projet{Stage de fin d'étude~:\,}{Système de débogage par sauvegarde externe de contexte}\\
+\group{Autonomie}	& \comment{\hs Conception et développement d'un système de core dump avec export par le réseau
+			et d'un moyen de rechargement en débogueur. Intégré aux récepteurs Galileo sous DO-178B.}\\
+~			& \lieu{\hs Équipe de développement logiciel Galileo - THALES Avionics Valence}\\
 
-2010\textsl{ - 3 mois}	& \activite{Stage 2$^{\grave{e}me}$ année~:\,Communications P2P multi-sauts pour iPhone OS}
-			\comment{\newline Autonomie. Réalisation d'un framework de communication et géo-routage pair à pair}
-			\lieu{\newline Équipe Drakkar - Laboratoire Informatique de Grenoble}\\
+2010\textsl{ - 1 mois}  & \activite{Table de hachage distribuée} \\
+\group{Trinôme}		& \comment{\hs Conception et développement en C d'une DHT avec répartition des serveurs en anneau.}\\
 
-2010\textsl{ - 1 mois}	& \activite{Projet~:\,Système d'exploitation à temps partagé pour une carte programmable}
-			\comment{\newline Projet en binôme. Réalisation d'un OS en C gérant la concurrence et la séparation mode noyau/utilisateur.
-			Destiné à fonctionner sur une configuration implantée sur carte FPGA}\\
+2010\textsl{ - 4 mois}  & \activite{Pilote de carte réseau pour un Linux embarqué sur carte programmable FPGA} \\
+\group{Binôme} 		& \comment{\hs Développement d'un pilote linux pour un contrôleur réseau sans documentation du matériel.}\\
 
-2010\textsl{ - 2 mois}	& \activite{Travail~:\,Application Twitter-like pour iPhone}
-			\comment{\newline Travail seul. Conception et réalisation du client sur iPhone et du serveur dédié en java.}\\
+2010\textsl{ - 3 mois}	& \projet{{Stage 2$^{\grave{e}me}$ année~:\,}}{Communications P2P multi-sauts pour iPhone OS}\\
+\group{Autonomie}	& \comment{\hs Réalisation d'un framework de communication via géo-routage pair à pair.}\\
+~			& \lieu{\hs Équipe Drakkar - Laboratoire Informatique de Grenoble}\\
 
-2010\textsl{ - 1 mois}	& \activite{Projet~:\,Compilateur en ada d'un sous langage de Java}
-			\comment{\newline Projet en quadrinôme à temps plein. Analyse lexicale, syntaxique et génération de code}\\
+2010\textsl{ - 1 mois}	& \activite{Système d'exploitation à temps partagé pour une carte programmable FPGA}\\
+\group{Binôme}		& \comment{\hs Réalisation en C d'un OS embarqué gérant la concurrence et séparation noyau/utilisateur.}\\
 
-2005~--~2006 		& \activite{Construction de la maison familiale}
-			\comment{\newline Travail en famille. Maçonnerie intérieure et extérieure, charpente, couverture, parquet}
+%2010\textsl{ - 2 mois}	& \activite{Travail~:\,Application Twitter-like pour iPhone}
+%			\comment{\newline Travail seul. Conception et réalisation du client sur iPhone et du serveur dédié en java.}\\
+
+% 2010\textsl{ - 1 mois}	& \activite{Compilateur en ada d'un sous langage de Java}\\
+% \group{Quadrinôme}	& \comment{\hs Analyse lexicale, syntaxique et génération de code}\\
+%
+
+%2005~--~2006 		& \activite{Construction de la maison familiale}\\
+%\group{Famille}		& \comment{\hs Maçonnerie intérieure et extérieure, charpente, couverture, parquet}
 \end{rubriquetableau}
 
-\begin{rubriquetableau}[2.5cm]{Compétences en informatique}%
+\begin{rubriquetableau}[2.5cm]{Compétences en informatique}% TODO
 			& \activite{Systèmes maîtrisés :}
 			\comment{Linux, MacOS, Windows}\\
 
 			& \activite{Langages et scripts~:}
-			\comment{Assembleur, Bash, C, C++, iPhone - Objective-C, Java, \LaTeX, Oracle, SQL2, SystemC - TLM, VHDL, xHTML-CSS}\\
+			\comment{Assembleur, Bash, C, C++, Objective-C, Java, \LaTeX, SQL, {SystemC~-~TLM}, VHDL}\\ % TODO
 
 			& \activite{Logiciels maîtrisés~:}
-			\comment{Eclipse, gdb, Git/Subversion, OpenOffice-Spreadsheet, Vim, Xcode}
+			\comment{Debugger, Git/Mercurial/SVN, Vim, Xcode}
+			% script shell
+			% Environnement unix
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Langues}
 			& \activite{Anglais}
-			\comment{Tenir une conversation technique, TOEIC 833}\\
+			\comment{Tenir une conversation technique, TOEIC 835}\\
 
 			& \activite{Allemand}
-			\comment{Compréhension d'un journal télévisé court. Parlé fluide}
+			\comment{Compréhension d'un journal télévisé court et d'une conversation à rythme modéré.}
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Loisirs}
 			& \activite{Engagement associatif}\\
-2010~--~2011		& \comment{~~~~~\textbf{Responsable Achats} -- Bureau des Élèves de Grenoble~INP}\\
-2009~--~2010		& \comment{~~~~~\textbf{Président} -- Cafétéria de l'E\textsc{nsimag}} \\
-			& \comment{~~~~~\textbf{Organisateur} de repas -- Bureau des Élèves de l'E\textsc{nsimag}}\\
-			& \comment{~~~~~\textbf{Vice-Président} -- Club de dégustation de bière de Grenoble~INP}\\
+2010~--~2011		& \comment{\hs\textbf{Responsable Achats} et qualité (officieusement) -- Bureau des Élèves de Grenoble~INP}\\
+2009~--~2010		& \comment{\hs\textbf{Président Cafétéria} Préparation quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
+			& \comment{\hs\textbf{Organisateur} de repas mensuels (100 à 200 personnes) -- Bureau des Élèves de l'Ensimag}\\
+			& \comment{\hs\textbf{Vice-Président} -- Club de dégustation de bière de Grenoble~INP}\\
+			& \activite{Escalade}\\
 			& \activite{Baby-foot}\\
-			& \activite{Jeu de rôle}\\
-			& \activite{Mangas}\\
-			& \activite{Penspinning}
+			%& \activite{Jeu de rôle}\\
+			%& \activite{Mangas}\\
+			%& \activite{Penspinning}
 \end{rubriquetableau}
 \end{document}
