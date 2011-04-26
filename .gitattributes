@@ -1,0 +1,2 @@
+# treat pdf as binary files
+*.pdf -crlf -diff -merge
