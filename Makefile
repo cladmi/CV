@@ -7,7 +7,9 @@ SOURCE=
 
 all: cv.pdf
 	@ echo
-	grep --color=auto TODO cv.tex
+	@ echo grep --color=auto TODO cv.tex
+	@ grep --color=auto TODO cv.tex || test 1
+	
 
 
 cv.pdf: cv.tex $(IMAGE) $(SOURCE)
