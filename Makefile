@@ -2,19 +2,20 @@ CTEX=pdflatex
 IMAGE=
 SOURCE=
 
+OUT_FILE = cv_gaetan_harter.pdf
 
 .phony: all
 
-all: cv_gaetan_harter_ensimag.pdf
+all: $(OUT_FILE)
 	@ echo
 	@ echo grep --color=auto TODO cv.tex
 	@ grep --color=auto TODO cv.tex || test 1
 
 
 
-cv_gaetan_harter_ensimag.pdf: cv.tex $(IMAGE) $(SOURCE)
+$(OUT_FILE): cv.tex $(IMAGE) $(SOURCE)
 	$(CTEX) cv
-	cp cv.pdf cv_gaetan_harter_ensimag.pdf
+	cp cv.pdf $(OUT_FILE)
 	rm -f cv.aux cv.log cv.aux cv.lol cv.toc
 
 
