@@ -6,7 +6,7 @@
 %
 \documentclass{cv}
 
-\usepackage[francais]{babel} 
+\usepackage[francais]{babel}
 \usepackage[latin1]{inputenc}  %% les accents dans le fichier.tex
 \usepackage[T1]{fontenc}       %% Pour la cesure des mots accentues
 \usepackage[paper=a4paper,textwidth=160mm,twosideshift=0pt]{geometry}
@@ -34,139 +34,156 @@
 \begin{chapeau}
 \hspace{1cm}
 \begin{adresse}
-	Gaëtan HARTER\\
-	13, Avenue Maréchal Randon\\
-	38\,000 Grenoble\\
-	\vspace{3pt}
-	Tel.~:\,06~85~33~33~22\\
-	E-mail~:\,\texttt{hartergaetan@gmail.com}
+        Gaëtan HARTER\\
+        13, Avenue Maréchal Randon\\
+        38\,000 Grenoble\\
+        \vspace{3pt}
+        Tel.~:\,06~85~33~33~22\\
+        E-mail~:\,\texttt{hartergaetan@gmail.com}
 \end{adresse}
 \begin{etatcivil}
-	Né le 13 Janvier 1989\\
-	Nationalité Française\\
-	Mobilité: France et pays anglophones ou germanophones\\
-	Permis B
+        Né le 13 Janvier 1989\\
+        Nationalité Française\\
+        Mobilité: Grenoble\\
+        Permis B
 \end{etatcivil}
 \hspace{0.5cm}
 \end{chapeau}
 \vspace{0.5cm}
 \begin{center}
-	\textbf{\Large Ingénieur Systèmes et logiciels embarqués\\}
-	\textbf{\large Grenoble INP - Ensimag\\}
-	\vspace{0.5em}
-	\textbf{\large Recherche d'un emploi en Systèmes embarqués\\Intérêt pour les méthodes agiles\\}
-	{À partir de septembre 2012}
+        \textbf{\Large Ingénieur Systèmes et logiciels embarqués\\}
+        \textbf{\large Grenoble INP - Ensimag\\}
+        \vspace{0.5em}
+        \textbf{\large Recherche d'un emploi en Systèmes embarqués\\} %\\Intérêt pour les méthodes agiles\\}
+        {À partir de septembre 2013}
 \end{center}
 
 
 
-	%%%%%%%%%%%%%%%%%%
-	% Bloc rubriques %
-	%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%
+        % Bloc rubriques %
+        %%%%%%%%%%%%%%%%%%
 
 %
 %
-%	Liste des Emplois/réalisés
+%        Liste des Emplois/réalisés
 %
 %
 \begin{rubriquetableau}[2.5cm]{Activités professionnelles}
-2011~--~2012		& \projet{Premier emploi~:\,}{Support utilisateur de plateforme de réseau de capteur}\\
-~			& \comment{\hs Développement et support utilisateur sur systêmes d'exploitations
-			embarqués orientés réseau. Développement embarqué, tutoriaux, support, évolution plateforme.}\\
-~			& \lieu{\hs Équipe FIT-SensLAB - Inria Grenoble}\\
+2011~--~2013            & \activite{Support, architecture et développement de plateforme de réseau de capteur}\\
+\group{1$^{er}$ emploi} & \comment{
+                        \hs Conception et développement de l'architecture logicielle, système et réseau de la plateforme FIT-IOT.
+                        Gestion du développement logiciel pour les nouvelles cartes capteurs FIT-IOT.
+                        Support utilisateur et évolution plateforme SensLAB.
 
-2011\textsl{ - 5 mois}  & \projet{Stage de fin d'étude~:\,}{Sauvegarde externe de contexte pour récepteur Galileo}\\
-\group{Autonomie}	& \comment{\hs Conception et développement d'un système de core dump exporté par le réseau
-			et de rechargement en débogueur. Travail avec des méthodes agiles. Équipements certifiés DO-178B.}\\
-~			& \lieu{\hs Équipe de développement logiciel Galileo - THALES Avionics Valence}\\
+                        \hs C, Python, ARM, RTOS, Linux Embarqué, IPv6, intégration continue
+                        }\\
+~                       & \lieu{\hs Équipe FIT-SensLAB - Inria Grenoble}\\
 
-2010\textsl{ - 3 mois}	& \projet{{Stage 2$^{\grave{e}me}$ année~:\,}}{Communications P2P multi-sauts pour iPhone OS}\\
-\group{Autonomie}	& \comment{\hs Réalisation d'un framework de communication via géo-routage pair à pair.}\\
-~			& \lieu{\hs Équipe Drakkar - Laboratoire Informatique de Grenoble}\\
+2011\textsl{ - 5 mois}  & \activite{Sauvegarde externe de contexte pour récepteur satellite}\\
+\group{Stage}           & \comment{
+                        \hs Conception et développement d'un système de core dump rechargeable en débogueur pour équipement embarqué.
+                        Travail avec des méthodes agiles. Équipement certifié DO-178B.
 
-%2010\textsl{ - 2 mois}	& \activite{Travail~:\,Application Twitter-like pour iPhone}
-%			\comment{\newline Travail seul. Conception et réalisation du client sur iPhone et du serveur dédié en java.}\\
+                        \hs Assembleur, C++, ldscript, modification binaires COFF, débogueur
+                        } \\
+~                       & \lieu{\hs Équipe de développement logiciel Galileo - THALES Avionics Valence}\\
 
-% 2010\textsl{ - 1 mois}	& \activite{Compilateur en ada d'un sous langage de Java}\\
-% \group{Quadrinôme}	& \comment{\hs Analyse lexicale, syntaxique et génération de code}\\
+
+2010\textsl{ - 3 mois}  & \activite{Communications P2P multi-sauts pour iPhone OS}\\
+\group{Stage}           & \comment{
+                        \hs Réalisation d'un framework de communication autoconfiguré via géo-routage pair à pair.
+
+                        \hs Réseau~Ad-Hoc, Objective-C, Bonjour, AsyncSocket} \\
+~                       & \lieu{\hs Équipe Drakkar - Laboratoire Informatique de Grenoble}\\
+
+
+
+
+%2010\textsl{ - 2 mois}  & \activite{Travail~:\,Application Twitter-like pour iPhone}
+%                        \comment{\newline Travail seul. Conception et réalisation du client sur iPhone et du serveur dédié en java.}\\
+
+% 2010\textsl{ - 1 mois} & \activite{Compilateur en ada d'un sous langage de Java}\\
+% \group{Quadrinôme}     & \comment{\hs Analyse lexicale, syntaxique et génération de code}\\
 %
 
-% 2005~--~2006 		& {Construction de la maison familiale~:\,Maçonnerie, charpente, couverture, parquet}\\
+% 2005~--~2006           & {Construction de la maison familiale~:\,Maçonnerie, charpente, couverture, parquet}\\
 
-% 2005~--~2006 		& {Emploi d'été~:\,Entretien de cimetière militaire}\\
+% 2005~--~2006           & {Emploi d'été~:\,Entretien de cimetière militaire}\\
 
 \end{rubriquetableau}
 
 
 \begin{rubriquetableau}[2.5cm]{Formation}
 2008~--~2011
-			& \activite{Grenoble INP - Ensimag - Filière systèmes et logiciels embarqués
-			\newlineÉcole nationale supérieure d'informatique et de mathématiques appliquées}
-			\comment{\newline Architecture des systèmes sur puce, programmation concurrente, sécurité, tolérance aux fautes, systèmes distribués, systèmes d'exploitation, temps réel} \\
+                        & \activite{Grenoble INP - Ensimag - Filière systèmes et logiciels embarqués
+                        \newlineÉcole nationale supérieure d'informatique et de mathématiques appliquées}
+                        \comment{\newline Architecture des systèmes sur puce, programmation concurrente, sécurité, tolérance aux fautes, systèmes distribués, systèmes d'exploitation, temps réel} \\
 
 %2006~--~2008
-%			& \activite{Classe préparatoire aux Grandes Écoles} \lieu{ Lycée Kleber, Strasbourg (67)} 
-%			\comment{\newline Mathématiques, physique, sciences de l'ingénieur et informatique} \\
+%                        & \activite{Classe préparatoire aux Grandes Écoles} \lieu{ Lycée Kleber, Strasbourg (67)}
+%                        \comment{\newline Mathématiques, physique, sciences de l'ingénieur et informatique} \\
 %2006
-%			 & \activite{Bac Scientifique -- Mathématiques et sciences de l'ingénieur -- Mention Bien}
+%                        & \activite{Bac Scientifique -- Mathématiques et sciences de l'ingénieur -- Mention Bien}
 \end{rubriquetableau}
 
 
 
 %
 %
-%	Projets représentatifs de mes attentes
+%        Projets représentatifs de mes attentes
 %
 %
 \begin{rubriquetableau}[2.5cm]{Projets scolaires représentatifs}
 2010\textsl{ - 1 mois}  & \activite{Table de hachage distribuée} \\
-\group{Trinôme}		& \comment{\hs Conception et développement en C d'une DHT avec répartition des serveurs en anneau.}\\
+\group{Trinôme}         & \comment{\hs Conception et développement en C d'une DHT avec répartition des serveurs en anneau.}\\
 
 2010\textsl{ - 4 mois}  & \activite{Pilote de carte réseau pour un Linux embarqué sur carte programmable FPGA} \\
-\group{Binôme} 		& \comment{\hs Développement d'un pilote linux pour un contrôleur réseau sans documentation du matériel.}\\
+\group{Binôme}          & \comment{\hs Développement d'un pilote linux pour un contrôleur réseau sans documentation du matériel.}\\
 
 
 
-2010\textsl{ - 1 mois}	& \activite{Système d'exploitation à temps partagé pour une carte programmable FPGA}\\
-\group{Binôme}		& \comment{\hs Réalisation en C d'un OS embarqué gérant la concurrence et séparation noyau/utilisateur.}\\
+2010\textsl{ - 1 mois}  & \activite{Système d'exploitation à temps partagé pour une carte programmable FPGA}\\
+\group{Binôme}          & \comment{\hs Réalisation en C d'un OS embarqué gérant la concurrence et séparation noyau/utilisateur.}\\
 \end{rubriquetableau}
 
 
 \begin{rubriquetableau}[2.5cm]{Compétences en informatique}
-\activite{Langages~:}	& \comment{Maîtrisés~:\,C, Assembleur(x86, RISC, DSP), Bash}\\
-			& \comment{Notions~:\,C++, Objective-C~-~iOS, Java, \LaTeX, Ruby, SQL, {SystemC~-~TLM}, VHDL}\\
+\activite{Langages~:}   & \comment{Maîtrisés~:\,C, Python, Assembleur(x86, RISC, DSP), Bash}\\
+                        & \comment{Notions~:\,C++, Objective-C~-~iOS, Java, \LaTeX, {SystemC~-~TLM}, VHDL}\\
 
-		%	\comment{C, Assembleur(x86, RISC, , BashAssembleur, Bash, C, C++, Objective-C~-~iOS, Java, \LaTeX, SQL, {SystemC~-~TLM}, VHDL}\\
-			%\comment{Assembleur, Bash, C, C++, Objective-C~-~iOS, Java, LaTeX, SQL, {SystemC~-~TLM}, VHDL}\\
+                %        \comment{C, Assembleur(x86, RISC, , BashAssembleur, Bash, C, C++, Objective-C~-~iOS, Java, \LaTeX, SQL, {SystemC~-~TLM}, VHDL}\\
+                        %\comment{Assembleur, Bash, C, C++, Objective-C~-~iOS, Java, LaTeX, SQL, {SystemC~-~TLM}, VHDL}\\
 
-			\activite{Outils~:} &
-			\comment{Environnement GNU/Linux, Terminal, vim, Git/Mercurial/SVN, Debugger, Xcode}
+                        \activite{Outils~:} &
+                        \comment{Environnement GNU/Linux, Terminal, vim, Git/Mercurial/SVN, Debugger, Jenkins}
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Langues}
-			& \activite{Anglais}
-			\comment{Tenir une conversation technique, TOEIC 835}\\
+                        & \activite{Anglais}
+                        \comment{Tenir une conversation technique, TOEIC 835}\\
 
-			& \activite{Allemand}
-			\comment{Bonne compréhension orale. Niveau A2}
+                        & \activite{Allemand}
+                        \comment{Bonne compréhension orale. Niveau A2}
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Loisirs}
-			& \activite{Engagement associatif}\\
-2010~--~2011		& \comment{\hs\textbf{Responsable Achats} et qualité (CA 260k\euro) -- Bureau des Élèves de Grenoble~INP}\\
-2009~--~2010		& \comment{\hs\textbf{Président Cafétéria} Préparation quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
-			& \comment{\hs\textbf{Organisateur} de repas mensuels (100 à 200 personnes) -- Bureau des Élèves de l'Ensimag}\\
-			& \comment{\hs\textbf{Vice-Président} -- Club de dégustation de bière de Grenoble~INP}\\
-			& \activite{Escalade}\\
-			& \activite{Baby-foot}\\
-			%& \activite{Jeu de rôle}\\
-			%& \activite{Mangas}\\
-			%& \activite{Penspinning}
+                        & \activite{Engagement associatif}\\
+2010~--~2011            & \comment{\hs\textbf{Responsable Achats} et qualité (CA 260k\euro) -- Bureau des Élèves de Grenoble~INP}\\
+2009~--~2010            & \comment{\hs\textbf{Président Cafétéria} Préparation quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
+                        & \comment{\hs\textbf{Organisateur} de repas mensuels (100 à 200 personnes) -- Bureau des Élèves de l'Ensimag}\\
+                        & \comment{\hs\textbf{Vice-Président} -- Club de dégustation de bière de Grenoble~INP}\\
+                        & \activite{Escalade}\\
+                        & \activite{Musique métal}\\
+                        %& \activite{Baby-foot}\\
+                        %& \activite{Jeu de rôle}\\
+                        %& \activite{Mangas}\\
+                        %& \activite{Penspinning}
 \end{rubriquetableau}
 
 \begin{center}
-	\vspace{0.5em}
-	\textbf{Références disponibles sur demande}
+        \vspace{0.5em}
+        \textbf{Références disponibles sur demande}
 \end{center}
 
 \end{document}
