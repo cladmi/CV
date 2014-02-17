@@ -1,6 +1,4 @@
 CTEX=pdflatex
-IMAGE=
-SOURCE=
 
 OUT_FILE = cv_gaetan_harter.pdf
 
@@ -13,10 +11,18 @@ all: $(OUT_FILE)
 
 
 
-$(OUT_FILE): cv.tex $(IMAGE) $(SOURCE)
+cv.pdf: cv.tex
 	$(CTEX) cv
 	cp cv.pdf $(OUT_FILE)
 	rm -f cv.aux cv.log cv.aux cv.lol cv.toc
+
+$(OUT_FILE): cv.pdf
+	cp $^ $@
+
+
+clean:
+	rm -f cv.pdf
+	rm -f $(OUT_FILE)
 
 
 
