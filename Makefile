@@ -1,28 +1,22 @@
 CTEX=pdflatex
 
-OUT_FILE = cv_gaetan_harter.pdf
+OUT_FILES = cv_gaetan_harter.pdf resume_gaetan_harter.pdf
 
 .phony: all
 
-all: $(OUT_FILE)
-	@ echo
-	@ echo grep --color=auto TODO cv.tex
-	@ grep --color=auto TODO cv.tex || test 1
+all: $(OUT_FILES)
 
 
+cv_gaetan_harter.pdf: cv.pdf
+	cp $^ $@
 
-cv.pdf: cv.tex
-	$(CTEX) cv
-	cp cv.pdf $(OUT_FILE)
-	rm -f cv.aux cv.log cv.aux cv.lol cv.toc
-
-$(OUT_FILE): cv.pdf
+resume_gaetan_harter.pdf: resume.pdf
 	cp $^ $@
 
 
+resume.pdf cv.pdf: %.pdf: %.tex
+	$(CTEX) $*
+	rm -f *.aux *.log *.aux *.lol *.toc
+
 clean:
-	rm -f cv.pdf
-	rm -f $(OUT_FILE)
-
-
-
+	rm -f *.pdf

@@ -1,0 +1,186 @@
+% CV fictif destine à servir de modèle à la classe de curriculum vitae cv.cls
+% Le fichier cv.cls doit se trouver dans le même repertoire ou dans un repertoire
+% accessible par LaTeX (voir l'utilisation de la variable TEXINPUTS).
+% 5 Fevrier 2003 -- Frederic Meynadier (Frederic.Meynadier@obspm.fr)
+%
+%
+\documentclass{cv}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}  %% les accents dans le fichier.tex
+\usepackage[T1]{fontenc}       %% Pour la cesure des mots accentues
+\usepackage[paper=a4paper,textwidth=160mm]{geometry}
+\usepackage{eurosym}
+
+\textheight=28cm
+\textwidth=18.5cm
+\hoffset = -1.25cm
+\voffset = -1.5cm
+%\headsep = 1cm
+%\headheight = 0cm
+\topmargin = -1cm
+
+\newcommand{\lieu}[1]{\textsl{#1}\ }
+%\newcommand{\lieu}[1]{{#1}\ }
+\newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\projet}[2]{{#1} \textbf{#2}\ }
+%\newcommand{\comment}[1]{\textsl{#1}\ }
+\newcommand{\comment}[1]{{#1}\ }
+\newcommand{\group}[1]{\hspace{1em}\textsl{#1}\ }
+\newcommand{\hs}{\hspace{1.6em}}
+
+
+\begin{document}
+\begin{chapeau}
+\hspace{1cm}
+\begin{adresse}
+        Gaëtan HARTER\\
+        13, Avenue Maréchal Randon\\
+        38\,000 Grenoble\\
+\end{adresse}
+\begin{etatcivil}
+        Phone~:\,+33~6~85~33~33~22\\
+        Mail~:\,\texttt{hartergaetan@gmail.com}
+        Github~:\,\texttt{https://github.com/cladmi}
+\end{etatcivil}
+%         Né le 13 Janvier 1989\\
+%         Nationalité Française\\
+%         Mobilité: Grenoble\\
+%         Permis B
+\hspace{0.5cm}
+\end{chapeau}
+\vspace{0.5cm}
+\begin{center}
+        \textbf{\Large Embedded system and software engineer\\}
+        \textbf{\large 6 years work experience\\}
+        \vspace{0.5em}
+        \textbf{\large Looking for a position as an embedded software engineer\\} %\\Intérêt pour les méthodes agiles\\}
+        {From September 2017}
+\end{center}
+
+
+
+        %%%%%%%%%%%%%%%%%%
+        % Bloc rubriques %
+        %%%%%%%%%%%%%%%%%%
+
+%
+%
+%        Liste des Emplois/réalisés
+%
+%
+\begin{rubriquetableau}[2.5cm]{Work experience}
+
+2011~--~2017            & \activite{Architecture and development for large scale wireless sensor testbed FIT-IoT-LAB}\\
+\group{1$^{st}$ job}
+                        & \hs Design and development of the testbed embedded software and network architecture.\\
+~                       & \hs From the embedded Yocto-Linux distributions with large scale deployment over NFS.\\
+~                       & \hs To the embedded control and administration softwares comprising a Python server and an embedded real-time monitoring firmware (Cortex-M3).\\
+~                       & \hs Design, development of users access tools and embedded usage examples.\\
+~                       & \hs English documentation and user support for the embedded software and testbed usage.\\
+~                       & \hs Implementation of a full continuous integration process, from Linux distribution generation, deployment on hardware and on target software testing.\\
+~                       & \hs \texttt{C, Python, ARM-CortexM3, RTOS, Embedded Linux - Yocto, IPv6, 6LowPAN, 802.15.4, continuous integration}.\\
+~                       & \lieu{\hs Team FIT-IoT-LAB - Inria Grenoble}\\
+
+2015, 2016              & \activite{Development project of an x86 operating system with virtual memory}\\
+\group{Teaching}
+~                       & \lieu{\hs Grenoble INP - Ensimag}\\
+% 2013, 2014              & \activite{Development project of a MIPS assembler}\\
+% \group{Teaching}
+% ~                       & \lieu{\hs Grenoble INP - Ensimag}\\
+
+2011                    & \activite{Post assertion core dump generation and export for an embedded system}\\
+\group{Internship}
+                        & \hs Generate a full post assertion processor and memory state core dump reloadable in debugger.\\
+~                       & \hs \texttt{Processor registers, Assembly Language, C++, gdb, linkerscript, COFF binary}.\\
+~                       & \lieu{\hs Galileo Positioning System ground equipments software team - THALES Avionics Valence}\\
+
+%2010\textsl{ - 3 mois}  & \activite{Communications P2P multi-sauts pour iPhone OS}\\
+%\group{Stage}           & \comment{
+%                        \hs Réalisation d'un framework de communication autoconfiguré via géo-routage pair à pair.
+%
+%                        \hs Réseau~Ad-Hoc, Objective-C, Bonjour, AsyncSocket} \\
+%~                       & \lieu{\hs Équipe Drakkar - Laboratoire Informatique de Grenoble}\\
+
+%2010\textsl{ - 2 mois}  & \activite{Travail~:\,Application Twitter-like pour iPhone}
+%                        \comment{\newline Travail seul. Conception et réalisation du client sur iPhone et du serveur dédié en java.}\\
+
+% 2010\textsl{ - 1 mois} & \activite{Compilateur en ada d'un sous langage de Java}\\
+% \group{Quadrinôme}     & \comment{\hs Analyse lexicale, syntaxique et génération de code}\\
+%
+
+\end{rubriquetableau}
+
+
+\begin{rubriquetableau}[2.5cm]{Education}
+2008~--~2011            & \activite{Grenoble INP - Ensimag - Embedded systems and softwares courses
+                        \newlineÉcole nationale supérieure d'informatique et de mathématiques appliquées
+                        \newline(top French computer science and math engineering school)}
+                        \comment{\newline Operating system, real time systems, multithreaded programming, on-chip system architecture, distributed systems, hardware security, fault tolerance} \\
+
+2006~--~2008            & \activite{Two-year highly selective classes to prepare for the competitive exams to the Grandes Ecoles} \comment{Mathematics, physics} \lieu{Lycée Kleber, Strasbourg}
+%2006~--~2008
+%                        & \activite{Classe préparatoire aux Grandes Écoles} \lieu{ Lycée Kleber, Strasbourg (67)}
+%                        \comment{\newline Mathématiques, physique, sciences de l'ingénieur et informatique} \\
+%2006
+%                        & \activite{Bac Scientifique -- Mathématiques et sciences de l'ingénieur -- Mention Bien}
+\end{rubriquetableau}
+
+
+
+%
+%        Projets représentatifs de mes attentes
+%
+\begin{rubriquetableau}[2.5cm]{Representative school projects}
+\activite{Embedded OS}  & Embedded MIPS operating system development - \textsl{C, assembly} \\
+\activite{Linux Driver} & FPGA network card driver on an embedded Linux - \textsl{C, Embedded Linux} \\
+\activite{Distributed}  & Distributed hash table design and development - \textsl{C, socket.h, concurrency, distributed} \\
+
+%2010\textsl{ - 1 mois}  & \activite{Table de hachage distribuée} \\
+%\group{Trinôme}         & \comment{\hs Conception et développement en C d'une DHT avec répartition des serveurs en anneau.}\\
+%
+%2010\textsl{ - 4 mois}  & \activite{Pilote de carte réseau pour un Linux embarqué sur carte programmable FPGA} \\
+%\group{Binôme}          & \comment{\hs Développement d'un pilote linux pour un contrôleur réseau sans documentation du matériel.}\\
+%
+%
+%
+%2010\textsl{ - 1 mois}  & \activite{Système d'exploitation à temps partagé pour une carte programmable FPGA}\\
+%\group{Binôme}          & \comment{\hs Réalisation en C d'un OS embarqué gérant la concurrence et séparation noyau/utilisateur.}\\
+\end{rubriquetableau}
+
+
+\begin{rubriquetableau}[2.5cm]{Technical skills}
+\activite{Languages}    & \comment{C, Python, Assembly, Bash}\\
+                       %& \comment{Notions~:\,C++, Objective-C~-~iOS, Java, \LaTeX, {SystemC~-~TLM}, VHDL}\\
+\activite{Tools}        & \comment{GNU/Linux, Advanced Git, Yocto, Jenkins, Terminal/vim, Makefile}\\
+\activite{Testing}      & \comment{Unit and integration tests, implementation of a continuous integration process}
+\end{rubriquetableau}
+
+\begin{rubriquetableau}[2.5cm]{Languages}
+\activite{French}       & \comment{Mother tongue}\\
+\activite{English}      & \comment{Working knowledge and conversational, TOEIC 835}\\
+\activite{German}       & \comment{Conversational, good oral comprehension, Level A2}
+\end{rubriquetableau}
+
+\begin{rubriquetableau}[2.5cm]{Spare-time activities}
+                        & Metal music, cooking, video games, climbing\\
+                        & \activite{Volunteering}\\
+2015~--Now              & \comment{\hs Treasurer of JustBeer - Beer tasting organization}\\
+2015~--Now              & \comment{\hs Treasurer of Mormegil - Metal concert production organization}
+%2010~--~2011            & \comment{\hs\textbf{Responsable Achats} et qualité (CA 260k\euro) -- Bureau des Élèves de Grenoble~INP}\\
+%2009~--~2010            & \comment{\hs\textbf{Président Cafétéria} Préparation quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
+%                        & \comment{\hs\textbf{Organisateur} de repas mensuels (100 à 200 personnes) -- Bureau des Élèves de l'Ensimag}\\
+%                        & \comment{\hs\textbf{Vice-Président} -- Club de dégustation de bière de Grenoble~INP}\\
+%                        & \activite{Escalade}\\
+                        %& \activite{Baby-foot}\\
+                        %& \activite{Jeu de rôle}\\
+                        %& \activite{Mangas}\\
+                        %& \activite{Penspinning}
+\end{rubriquetableau}
+
+\begin{center}
+        \vspace{0.5em}
+    \textbf{References available upon request.}
+\end{center}
+
+\end{document}
