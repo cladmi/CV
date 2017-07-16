@@ -1,5 +1,5 @@
-% CV fictif destine ‡ servir de modËle ‡ la classe de curriculum vitae cv.cls
-% Le fichier cv.cls doit se trouver dans le mÍme repertoire ou dans un repertoire
+% CV fictif destine √† servir de mod√®le √† la classe de curriculum vitae cv.cls
+% Le fichier cv.cls doit se trouver dans le m√™me repertoire ou dans un repertoire
 % accessible par LaTeX (voir l'utilisation de la variable TEXINPUTS).
 % 5 Fevrier 2003 -- Frederic Meynadier (Frederic.Meynadier@obspm.fr)
 %
@@ -7,7 +7,7 @@
 \documentclass{cv}
 
 \usepackage[francais]{babel}
-\usepackage[latin1]{inputenc}  %% les accents dans le fichier.tex
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}       %% Pour la cesure des mots accentues
 \usepackage[paper=a4paper,textwidth=160mm]{geometry}
 \usepackage{eurosym}
@@ -34,29 +34,29 @@
 \begin{chapeau}
 \hspace{1cm}
 \begin{adresse}
-        GaÎtan HARTER\\
-        13, Avenue MarÈchal Randon\\
+        Ga√´tan HARTER\\
+        38, Avenue Mar√©chal Randon\\
         38\,000 Grenoble\\
         \vspace{3pt}
         Tel.~:\,06~85~33~33~22\\
         E-mail~:\,\texttt{hartergaetan@gmail.com}
-	Github~:\,\texttt{https://github.com/cladmi}
+        Github~:\,\texttt{https://github.com/cladmi}
 \end{adresse}
 \begin{etatcivil}
-        NÈ le 13 Janvier 1989\\
-        NationalitÈ FranÁaise\\
-        MobilitÈ: Grenoble\\
+        N√© le 13 Janvier 1989\\
+        Nationalit√© Fran√ßaise\\
+        Mobilit√©: Grenoble\\
         Permis B
 \end{etatcivil}
 \hspace{0.5cm}
 \end{chapeau}
 \vspace{0.5cm}
 \begin{center}
-        \textbf{\Large IngÈnieur SystËmes et logiciels embarquÈs\\}
+        \textbf{\Large Ing√©nieur Syst√®mes et logiciels embarqu√©s\\}
         \textbf{\large Grenoble INP - Ensimag\\}
         \vspace{0.5em}
-        \textbf{\large Recherche d'un emploi en SystËmes embarquÈs\\} %\\IntÈrÍt pour les mÈthodes agiles\\}
-        {¿ partir de septembre 2015}
+        \textbf{\large Recherche d'un emploi en Syst√®mes embarqu√©s\\} %\\Int√©r√™t pour les m√©thodes agiles\\}
+        {√Ä partir de septembre 2017}
 \end{center}
 
 
@@ -67,45 +67,47 @@
 
 %
 %
-%        Liste des Emplois/rÈalisÈs
+%        Liste des Emplois/r√©alis√©s
 %
 %
-\begin{rubriquetableau}[2.5cm]{ActivitÈs professionnelles}
+\begin{rubriquetableau}[2.5cm]{Activit√©s professionnelles}
 
-2011~--~2015            & \activite{Architecture, dÈveloppement sur plateforme de rÈseau de capteur FIT-IoT-LAB}\\
+2011~--~2017            & \activite{Architecture et d√©veloppement plateforme de r√©seau de capteurs FIT-IoT-LAB}\\
 \group{1$^{er}$ emploi}
-	                & \hs Conception et dÈveloppement de l'architecture logicielle, systËme et rÈseau de la plateforme.\\
-~			& \hs GÈnÈration de distribution embarquÈe Linux Yocto, et dÈploiement large Èchelle NFS.\\
-~		        & \hs DÈveloppement embarquÈ d'application d'administration, librairies et exemples utilisateur.\\
-~		        & \hs Outils utilisateurs d'accËs et d'automatisation d'expÈrimentation.\\
-~		        & \hs Mise en place et application d'une dÈmarche d'intÈgration continue.\\
-~		        & \hs Documentation et support utilisateur dÈveloppement embarquÈ et utilisation plateforme\\
-~                       & \hs \texttt{C, Python, ARM-CortexM3, RTOS, Linux EmbarquÈ - Yocto, IPv6, 6LowPAN, 802.15.4, intÈgration continue}.\\
-~                       & \lieu{\hs …quipe FIT-SensLAB - Inria Grenoble}\\
+                        & \hs Conception et d√©veloppement de l'architecture logicielle, syst√®me et r√©seau de la plateforme.\\
+~                       & \hs G√©n√©ration de distribution embarqu√©e Linux Yocto pour un d√©ploiement large √©chelle NFS.\\
+~                       & \hs D√©veloppement embarqu√© d'applications d'administration, librairies et exemples utilisateur.\\
+~                       & \hs Conception et d√©veloppement d'outils utilisateurs d'acc√®s et d'automatisation.\\
+~                       & \hs Documentation en anglais et support utilisateur au d√©veloppement embarqu√© et outils.\\
+~                       & \hs Impl√©mentation d'un syst√™me d'int√©gration continue complet, de la g√©n√©ration de la distribution, son d√©ploiement et des tests syt√®mes sur cible.\\
+~                       & \hs \texttt{C, Python, ARM-CortexM3, RTOS, Linux Embarqu√© - Yocto, IPv6, 6LowPAN, 802.15.4, int√©gration continue}.\\
+~                       & \lieu{\hs √âquipe FIT-IoT-LAB - Inria Grenoble}\\
 
-2015, 2016              & \activite{Ensimag - Encadrement projet de dÈveloppement d'un systËme d'exploitation x86}\\
-2013, 2014              & \activite{Ensimag - Encadrement projet de dÈveloppement en C}\\
+2015, 2016              & \activite{Ensimag - Encadrement projet de d√©veloppement d'un syst√®me d'exploitation x86}\\
+% 2013, 2014              & \activite{Ensimag - Encadrement projet de d√©veloppement en C}\\
+    \group{Enseignement} &
 
-2011			& \activite{Stage Fin d'Ètude - Sauvegarde externe de contexte pour rÈcepteur satellite}\\
-			& \comment{
-			\hs Conception et dÈveloppement d'un systËme de core dump rechargeable en dÈbogueur pour Èquipement embarquÈ.
-			\texttt{Architecture mÈmoire, Assembleur, C++, gdb, ldscript}.
-                        % Travail avec des mÈthodes agiles. …quipement certifiÈ DO-178B.
-			}\\
-~                       & \lieu{\hs …quipe de dÈveloppement logiciel Galileo - THALES Avionics Valence}\\
+~ \\
+2011                    & \activite{Stage Fin d'√©tude - Sauvegarde externe de contexte pour r√©cepteur satellite}\\
+                        & \comment{
+                        \hs G√©n√©ration d'un core dump processeur et m√©moire rechargeable en d√©buggeur.
+                        \texttt{Architecture CPU et m√©moire, Assembleur, C++, gdb, ldscript}.
+                        % Travail avec des m√©thodes agiles. √âquipement certifi√© DO-178B.
+                        }\\
+~                       & \lieu{\hs √âquipe de d√©veloppement logiciel Galileo - THALES Avionics Valence}\\
 
 %2010\textsl{ - 3 mois}  & \activite{Communications P2P multi-sauts pour iPhone OS}\\
 %\group{Stage}           & \comment{
-%                        \hs RÈalisation d'un framework de communication autoconfigurÈ via gÈo-routage pair ‡ pair.
+%                        \hs R√©alisation d'un framework de communication autoconfigur√© via g√©o-routage pair √† pair.
 %
-%                        \hs RÈseau~Ad-Hoc, Objective-C, Bonjour, AsyncSocket} \\
-%~                       & \lieu{\hs …quipe Drakkar - Laboratoire Informatique de Grenoble}\\
+%                        \hs R√©seau~Ad-Hoc, Objective-C, Bonjour, AsyncSocket} \\
+%~                       & \lieu{\hs √âquipe Drakkar - Laboratoire Informatique de Grenoble}\\
 
 %2010\textsl{ - 2 mois}  & \activite{Travail~:\,Application Twitter-like pour iPhone}
-%                        \comment{\newline Travail seul. Conception et rÈalisation du client sur iPhone et du serveur dÈdiÈ en java.}\\
+%                        \comment{\newline Travail seul. Conception et r√©alisation du client sur iPhone et du serveur d√©di√© en java.}\\
 
 % 2010\textsl{ - 1 mois} & \activite{Compilateur en ada d'un sous langage de Java}\\
-% \group{QuadrinÙme}     & \comment{\hs Analyse lexicale, syntaxique et gÈnÈration de code}\\
+% \group{Quadrin√¥me}     & \comment{\hs Analyse lexicale, syntaxique et g√©n√©ration de code}\\
 %
 
 \end{rubriquetableau}
@@ -113,72 +115,72 @@
 
 \begin{rubriquetableau}[2.5cm]{Formation}
 2008~--~2011
-                        & \activite{Grenoble INP - Ensimag - FiliËre systËmes et logiciels embarquÈs
-                        \newline…cole nationale supÈrieure d'informatique et de mathÈmatiques appliquÈes}
-                        \comment{\newline Architecture des systËmes sur puce, programmation concurrente, sÈcuritÈ, tolÈrance aux fautes, systËmes distribuÈs, systËmes d'exploitation, temps rÈel} \\
+                        & \activite{Grenoble INP - Ensimag - Ing√©nieur syst√®mes et logiciels embarqu√©s
+                        \newline√âcole nationale sup√©rieure d'informatique et de math√©matiques appliqu√©es}
+                        \comment{\newline Syst√®me d'exploitation, temps r√©el, programmation concurrente et parall√®le, syst√®mes sur puce, syst√®mes distribu√©s, s√©curit√© mat√©rielle, tol√©rance aux fautes} \\
 
-2006~--~2008            & \activite{Classe prÈparatoire aux Grandes …coles - MP* Informatique} \lieu{ LycÈe Kleber, Strasbourg}
+2006~--~2008            & \activite{Classe pr√©paratoire aux Grandes √âcoles - MP* Informatique} \lieu{ Lyc√©e Kleber, Strasbourg}
 %2006~--~2008
-%                        & \activite{Classe prÈparatoire aux Grandes …coles} \lieu{ LycÈe Kleber, Strasbourg (67)}
-%                        \comment{\newline MathÈmatiques, physique, sciences de l'ingÈnieur et informatique} \\
+%                        & \activite{Classe pr√©paratoire aux Grandes √âcoles} \lieu{ Lyc√©e Kleber, Strasbourg (67)}
+%                        \comment{\newline Math√©matiques, physique, sciences de l'ing√©nieur et informatique} \\
 %2006
-%                        & \activite{Bac Scientifique -- MathÈmatiques et sciences de l'ingÈnieur -- Mention Bien}
+%                        & \activite{Bac Scientifique -- Math√©matiques et sciences de l'ing√©nieur -- Mention Bien}
 \end{rubriquetableau}
 
 
 
 %
-%        Projets reprÈsentatifs de mes attentes
+%        Projets repr√©sentatifs de mes attentes
 %
-\begin{rubriquetableau}[2.5cm]{Projets scolaires reprÈsentatifs}
-\activite{OS embarquÈ}	& SystËme d'exploitation multit‚che sur CPU MIPS - \textsl{C, assembleur} \\
-\activite{Driver Linux} & Pilote de carte rÈseau FPGA pour Linux embarquÈ - \textsl{C, Linux embarquÈ} \\
-\activite{DistribuÈ}    & Table de hachage distribuÈe - \textsl{C, socket} \\
+\begin{rubriquetableau}[2.5cm]{Projets scolaires repr√©sentatifs}
+\activite{OS embarqu√©}  & Syst√®me d'exploitation multit√¢che sur CPU MIPS - \textsl{C, assembleur} \\
+\activite{Driver Linux} & Pilote de carte r√©seau FPGA pour Linux embarqu√© - \textsl{C, Linux embarqu√©} \\
+\activite{Distribu√©}    & Table de hachage distribu√©e - \textsl{C, socket.h, concurrence, distribu√©} \\
 
-%2010\textsl{ - 1 mois}  & \activite{Table de hachage distribuÈe} \\
-%\group{TrinÙme}         & \comment{\hs Conception et dÈveloppement en C d'une DHT avec rÈpartition des serveurs en anneau.}\\
+%2010\textsl{ - 1 mois}  & \activite{Table de hachage distribu√©e} \\
+%\group{Trin√¥me}         & \comment{\hs Conception et d√©veloppement en C d'une DHT avec r√©partition des serveurs en anneau.}\\
 %
-%2010\textsl{ - 4 mois}  & \activite{Pilote de carte rÈseau pour un Linux embarquÈ sur carte programmable FPGA} \\
-%\group{BinÙme}          & \comment{\hs DÈveloppement d'un pilote linux pour un contrÙleur rÈseau sans documentation du matÈriel.}\\
+%2010\textsl{ - 4 mois}  & \activite{Pilote de carte r√©seau pour un Linux embarqu√© sur carte programmable FPGA} \\
+%\group{Bin√¥me}          & \comment{\hs D√©veloppement d'un pilote linux pour un contr√¥leur r√©seau sans documentation du mat√©riel.}\\
 %
 %
 %
-%2010\textsl{ - 1 mois}  & \activite{SystËme d'exploitation ‡ temps partagÈ pour une carte programmable FPGA}\\
-%\group{BinÙme}          & \comment{\hs RÈalisation en C d'un OS embarquÈ gÈrant la concurrence et sÈparation noyau/utilisateur.}\\
+%2010\textsl{ - 1 mois}  & \activite{Syst√®me d'exploitation √† temps partag√© pour une carte programmable FPGA}\\
+%\group{Bin√¥me}          & \comment{\hs R√©alisation en C d'un OS embarqu√© g√©rant la concurrence et s√©paration noyau/utilisateur.}\\
 \end{rubriquetableau}
 
 
-\begin{rubriquetableau}[2.5cm]{CompÈtences en informatique}
+\begin{rubriquetableau}[2.5cm]{Comp√©tences en informatique}
 \activite{Langages~:}   & \comment{C, Python, Assembleur, Bash}\\
                         %& \comment{Notions~:\,C++, Objective-C~-~iOS, Java, \LaTeX, {SystemC~-~TLM}, VHDL}\\
-\activite{Outils~:}     & \comment{GNU/Linux, Git avancÈ, Yocto, Jenkins, Terminal/vim}\\
-\activite{Tests~:}      & \comment{Tests unitaires et d'intÈgration, mise en place d'une dÈmarche d'intÈgration continue}
+\activite{Outils~:}     & \comment{GNU/Linux, Git avanc√©, Yocto, Jenkins, Terminal/vim, Makefile}\\
+\activite{Tests~:}      & \comment{Tests unitaires et d'int√©gration, mise en place d'un syst√®me d'int√©gration continue}
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Langues}
-\activite{Anglais}      & \comment{Technique et courant ‡ l'Ècrit et l'oral, TOEIC 835}\\
-\activite{Allemand}     & \comment{Bonne comprÈhension orale. Niveau A2}
+\activite{Anglais}      & \comment{Technique et courant √† l'√©crit et l'oral, TOEIC 835}\\
+\activite{Allemand}     & \comment{Bonne compr√©hension orale. Niveau A2}
 \end{rubriquetableau}
 
 \begin{rubriquetableau}[2.5cm]{Loisirs}
-                        & Musique mÈtal, Jeux vidÈos, Cuisine, Escalade\\
+                        & Musique m√©tal, Jeux vid√©os, Cuisine, Escalade\\
                         & \activite{Engagement associatif}\\
-2015~--Actuel           & \comment{\hs TrÈsorier de JustBeer - Association Grenobloise de dÈgustation de biËre}\\
-2015~--Actuel           & \comment{\hs TrÈsorier de Mormegil - Association Grenobloise d'organisation de concert de type mÈtal}\\
-%2010~--~2011            & \comment{\hs\textbf{Responsable Achats} et qualitÈ (CA 260k\euro) -- Bureau des …lËves de Grenoble~INP}\\
-%2009~--~2010            & \comment{\hs\textbf{PrÈsident CafÈtÈria} PrÈparation quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
-%                        & \comment{\hs\textbf{Organisateur} de repas mensuels (100 ‡ 200 personnes) -- Bureau des …lËves de l'Ensimag}\\
-%                        & \comment{\hs\textbf{Vice-PrÈsident} -- Club de dÈgustation de biËre de Grenoble~INP}\\
+2015~--Actuel           & \comment{\hs Tr√©sorier de JustBeer - Association Grenobloise de d√©gustation de bi√®re}\\
+2015~--Actuel           & \comment{\hs Tr√©sorier de Mormegil - Association Grenobloise d'organisation de concert de type m√©tal}\\
+%2010~--~2011            & \comment{\hs\textbf{Responsable Achats} et qualit√© (CA 260k\euro) -- Bureau des √âl√®ves de Grenoble~INP}\\
+%2009~--~2010            & \comment{\hs\textbf{Pr√©sident Caf√©t√©ria} Pr√©paration quotidienne de sandwichs (40-70 personnes)} -- Ensimag\\
+%                        & \comment{\hs\textbf{Organisateur} de repas mensuels (100 √† 200 personnes) -- Bureau des √âl√®ves de l'Ensimag}\\
+%                        & \comment{\hs\textbf{Vice-Pr√©sident} -- Club de d√©gustation de bi√®re de Grenoble~INP}\\
 %                        & \activite{Escalade}\\
                         %& \activite{Baby-foot}\\
-                        %& \activite{Jeu de rÙle}\\
+                        %& \activite{Jeu de r√¥le}\\
                         %& \activite{Mangas}\\
                         %& \activite{Penspinning}
 \end{rubriquetableau}
 
 \begin{center}
         \vspace{0.5em}
-        \textbf{RÈfÈrences disponibles sur demande}
+        \textbf{R√©f√©rences disponibles sur demande}
 \end{center}
 
 \end{document}
