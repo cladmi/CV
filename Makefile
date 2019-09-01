@@ -14,7 +14,7 @@ resume_gaetan_harter.pdf: resume.pdf
 	cp $^ $@
 
 
-resume.pdf cv.pdf: %.pdf: %.tex
+resume.pdf cv.pdf: %.pdf: %.tex cv.cls
 	$(CTEX) $*
 	rm -f *.aux *.log *.aux *.lol *.toc
 
