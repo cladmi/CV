@@ -1,6 +1,6 @@
-%% Copyright (c) 2003-2009 Fr????ic Meynadier  
+%% Copyright (c) 2003-2009 Frédéric Meynadier
 %% Original : Eric-Olivier Le Bigot
-%% Modifs : Fr????ic Meynadier (Frederic.Meynadier@obspm.fr)
+%% Modifs : Frédéric Meynadier (Frederic.Meynadier@obspm.fr)
 %% Modifs : Dominique Quatravaux (dom@idealx.com) - conversion en
 %%     classe de document.
 %% 03/01/03
@@ -37,17 +37,17 @@
 \RequirePackage{array}
 
    %%%%%%%%%%%%%%%%%%%%%%%%%%%
-   % Mise en page par d??aut %
+   % Mise en page par défaut %
    %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength{\textwidth}{160mm}    %% Largeur de la zone texte
-\setlength{\oddsidemargin}{0mm}	 %% Texte centr??sur la page
+\setlength{\oddsidemargin}{0mm}	 %% Texte centré sur la page
 
-\pagestyle{empty} % pour ne pas indiquer de num??o de page...
+\pagestyle{empty} % pour ne pas indiquer de numéro de page...
 
-% On d??init les pieds de page comme des \stretch de force 1,
+% On définit les pieds de page comme des \stretch de force 1,
 % soit 4 plus fort que celui qui est en bas du chapeau
-% (Cf. ci-dessous). De cette fa??n, un CV qui ne remplit pas toute la
+% (Cf. ci-dessous). De cette façon, un CV qui ne remplit pas toute la
 % page a un bel espacement.
 \makeatletter
 \def\@textbottom{\vspace*{\stretch{1}}}
@@ -55,21 +55,21 @@
 
 
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   %      Param??res r??lables          %
+   %      Paramètres réglables          %
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% L'utilisateur peut les red??inir ceux-ci ?\renewcommand? si besoin :
+% L'utilisateur peut les redéfinir ceux-ci «\renewcommand» si besoin :
 
 \newcommand{\espaceInterRubrique}{\medskip\vspace{\stretch{0.1}}}
 
-% L'utilisateur peut les red??inir ceux-ci ?\setlength? si besoin :
+% L'utilisateur peut les redéfinir ceux-ci «\setlength» si besoin :
 
-\newlength{\rubriquetableauparindent} % indentation au d??ut d'une
-% ligne de droite dans un ?rubriquetableau?. Cette longueur peut
-% ??re n??ative, auquel cas l'alignement dans le tableau se fait
-% compte tenu du retrait de la premi??e ligne : celle-ci ne ?bavera?
-% pas sur l'espace r??erv??pour la colonne de gauche, au lieu de cela,
-% l'ensemble de la colonne de droite est d??al??de l'espace correspondant.
+\newlength{\rubriquetableauparindent} % indentation au début d'une
+% ligne de droite dans un «rubriquetableau». Cette longueur peut
+% être négative, auquel cas l'alignement dans le tableau se fait
+% compte tenu du retrait de la première ligne : celle-ci ne «bavera»
+% pas sur l'espace réservé pour la colonne de gauche, au lieu de cela,
+% l'ensemble de la colonne de droite est décalé de l'espace correspondant.
 
 \setlength{\rubriquetableauparindent}{-16pt}
 
@@ -79,15 +79,15 @@
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \def\er{$^{\hbox{er}}$}
-\def\ere{$^{\hbox{??e}}$}
-\def\eme{$^{\hbox{??e}}$}
+\def\ere{$^{\hbox{ère}}$}
+\def\eme{$^{\hbox{ème}}$}
 
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    % L'environnement "rubrique" %
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Usage : \begin{rubrique}[Indentation]{Titre} [...] \end{rubrique}
-% On met le texte qu'on veut ??l'int??ieur.
+% On met le texte qu'on veut à l'intérieur.
 
 \newenvironment{rubrique}[1]   % "rubrique" prend un seul argument, le titre
 {\espaceInterRubrique\relax%
@@ -98,11 +98,11 @@
    % L'environnement "rubriquetableau" %
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Il sert ??rendre les tableaux, avec typiquement des dates ??gauche
-% et des activit?? ??droite. Il s'utilise comme ?rubrique?
+% Il sert à rendre les tableaux, avec typiquement des dates à gauche
+% et des activités à droite. Il s'utilise comme «rubrique»
 % ci-dessus, sauf qu'il admet un argument optionnel qui est la largeur
-% de la colonne de gauche, et que l'int??ieur doit ??re un tableau
-% LaTeX avec les ?&? et les ?\\? qui vont bien.
+% de la colonne de gauche, et que l'intérieur doit être un tableau
+% LaTeX avec les «&» et les «\\» qui vont bien.
 % Par exemple :
 %
 % \begin{rubriquetableau}[3.5cm]{pipotage}
@@ -112,10 +112,10 @@
 % [etc...]
 % \end{rubriquetableau}
 %
-% Lorsqu'on omet le param??re entre crochets, cela a pour effet
-% de donner la dimension \linewidth ??la premi??e colonne (mais la
-% structure reste celle d'un tableau ??deux colonnes, donc ne pas oublier
-% d'??rire '\\' pour les retours ??la ligne).
+% Lorsqu'on omet le paramètre entre crochets, cela a pour effet
+% de donner la dimension \linewidth à la première colonne (mais la
+% structure reste celle d'un tableau à deux colonnes, donc ne pas oublier
+% d'écrire '\\' pour les retours à la ligne).
 
 \makeatletter
 
@@ -151,12 +151,12 @@
 %	9.81, rue des Pommiers\\%
 %	Trinity College, Londres\\%
 %	\ligne\\%
-%	T??. : 06 67 25 90 00\\%
+%	Tél. : 06 67 25 90 00\\%
 %	E-mail : \texttt{inewton@apple.com}
 % \end{adresse}
 % \begin{etatcivil}
-%	N??le 25/12/1642\\
-%	Nationalit??Anglaise
+%	Né le 25/12/1642\\
+%	Nationalité Anglaise
 % \end{etatcivil}
 % \end{chapeau}
 
