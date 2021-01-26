@@ -53,7 +53,13 @@
 \begin{center}
         \textbf{\Large Embedded system and software engineer\\}
         \large 8 years work experience\\
-        {\large Appeal for low level concurrent code, tooling and automated CI pipeline}\\
+
+        \vspace{0.5em}
+        \begin{minipage}{15cm}
+          \begin{center}
+            \large I enjoy low level concurrent code, write atomic commits, care about tooling and improve development with automated CI testing.
+          \end{center}
+        \end{minipage}
         %\\Intérêt pour les méthodes agiles\\}
         %\vspace{0.5em}{From September 2017}
 \end{center}
@@ -67,27 +73,32 @@
 %
 %
 \begin{rubriquetableau}[2.5cm]{Work experience}
+2020
+                        & \activite{Software quality engineer for safety critical embedded system}\lieu{MSA Safety Berlin}\\
+~                       & \hs Review code and tests on SIL3 certified software. Emphasise role of code structure and readability. Push for more communication and discussion in the development process.\\
+~                       & \hs Develop tools and test automation. Mentoring on software design, architecture, Yocto, git.\\
+~                       & \hs \texttt{C, Python, git, Bitbucket/Bamboo, SCIOPTA, VectorCast, SIL 3}\\
+
 2017~--~2019
-                        & \activite{Rapstore - App store for the open source MCU OS RIOT}\lieu{Freie Universität Berlin}\\
+                        & \activite{Rapstore - App store for the open source embedded OS RIOT}\lieu{Freie Universität Berlin}\\
 ~github:~\texttt{@RIOT-OS}
-                        & \hs Bug fix and evolve build system and tooling to support development outside of the main repository
-                           and automated testing directly by developers on hardware. \\
-~                       & \hs Reach expert level in the existing build system with its bugs, hacks, and special cases.\\
-~                       & \hs Work in an open source project with non expert peer reviews. \\
-~                       & \hs Separate steps for evolution documentation, bug fix, cleanups, refactoring,
-                          new feature introduction, tests and static tests, documented deprecation, iterative conversion to feature. \\
-~                       & \hs \texttt{git, make, Python, bash, C, pytest, Jenkins, github}\\
+                        & \hs Design and develop mechanisms for external board and software components development.
+                              Simplify automated hardware testing for developers.
+                              Integrate firmware update support. Address existing structure and timers/concurrency issues.
+                              Maintainer of the build system.\\
+~                       & \hs Meticulous iterative development in an open source project with non expert peer reviews.\\
+~                       & \hs \texttt{C, Python, bash, RIOT Real Time OS, git, GNUMake, pytest, Jenkins, github}\\
 
 2011~--~2017
                         & \activite{Embedded development for large scale sensor testbed FIT-IoT-LAB}\lieu{Inria Grenoble}\\
 ~github:~\texttt{@iot-lab}
-                        & \hs Design and development of the testbed embedded software and network architecture.\\
-                        & \hs Yocto-Linux distributions with large scale NFS deployment running \texttt{Python} and \texttt{C} control
-                          software with \texttt{FreeRTOS} power and radio monitoring firmware on \texttt{cortex-m3} $\mu C$.\\
-~                       & \hs Implementation of the continuous integration process with Yocto and software on hardware deployment,
+                        & \hs Design and development of the testbed embedded software and network architecture. \\
+~                       & \hs This includes the experiment control software in Python, realtime power and radio monitoring firmware in C-FreeRTOS on cortex-m3,
+                        embedded sniffer integration in Wireshark,
+                        Yocto-Linux distributions, deployment over NFS to 500+ boards in parallel, IPv6 /55 prefix.\\
+~                       & \hs Implementation of the on hardware continuous integration process, with Yocto and software deployment
                           and on target unit and integration testing. Target of 100\% branch coverage.\\
-~                       & \hs Design, development of user command line tools and embedded usage examples.\\
-~                       & \hs English documentation and user support for the embedded software and testbed usage.\\
+~                       & \hs Development of experimentation tools and firmwares. In charge of user support.\\
 ~                       & \hs \texttt{C, Python, ARM-CortexM3, RTOS, Yocto, IPv6, Jenkins, CI automated tools}\\
 
 Teaching~\textsl{2~years} & \activite{Development of an OS with virtual memory on x86}\lieu{Grenoble INP - Ensimag}\\
@@ -97,10 +108,10 @@ Teaching~\textsl{2~years} & \activite{Development of an OS with virtual memory o
 % \group{Teaching}
 % ~                       & \lieu{\hs Grenoble INP - Ensimag}\\
 
-Internship              & \activite{Post assertion core dump solution for an embedded system}\lieu{THALES Avionics Valence}\\
-~\textsl{2011-6~month}
-                        & \hs Generate a full post assertion processor and memory state core dump and debugger reloading\\
-~                       & \hs \texttt{DSP asm, gdb, linkerscript, COFF} \lieu{Galileo Positioning System ground equipments}
+Internship               & \activite{Post assertion core dump solution for a embedded system DO-178B}\lieu{THALES}\\
+%~\textsl{2011-6~month}
+%                        & \hs Generate a full post assertion processor and memory state core dump and debugger reloading\\
+%~                       & \hs \texttt{DSP asm, gdb, linkerscript, COFF} \lieu{Galileo Positioning System ground equipments}
 %~                       & \lieu{\hs Galileo Positioning System ground equipments software team - THALES Avionics Valence}\\
 %
 %2010\textsl{ - 3 mois}  & \activite{Communications P2P multi-sauts pour iPhone OS}\\
@@ -112,27 +123,26 @@ Internship              & \activite{Post assertion core dump solution for an emb
 
 
 \begin{rubriquetableau}[2.5cm]{Education}
-2008~--~2011            & \activite{Grenoble INP - Ensimag, Master degree in embedded systems and softwares}\\
-~                       &\textsl{Top French computer science and math engineering school}
-                        \comment{\newline Operating system, multithreaded programming, distributed systems, real time systems, SoC architecture, hardware security, fault tolerance} - \textsl{From hardware to networking}\\
-
-2006~--~2008            & \activite{Two-year highly selective classes to prepare for Grandes Ecoles competitive exams} \comment{"Classe préparatoires aux grandes écoles" Mathematics, physics} \lieu{Lycée Kleber, Strasbourg}
+%2008~--~2011            & \activite{Master degree in embedded systems and softwares engineering} \lieu{Grenoble INP - Ensimag}\\
+2008~--~2011            & \activite{Master in embedded systems and softwares engineering} \lieu{Grenoble INP - Ensimag} \\
+~                       & \hs \comment{ASM/C/Object oriented, concurrent systems, operating system, Linux device driver}\\
+2006~--~2008            & \activite{Highly selective classes preparing for competitive exams} \lieu{Prépa Kleber}
 \end{rubriquetableau}
 
-\begin{rubriquetableau}[2.5cm]{Representative school projects}
-\activite{Embedded OS}  & Embedded MIPS multitask operating system with kernel/user space - \textsl{C, assembly, syscalls, irq} \\
-\activite{Linux Driver} & FPGA network card driver on an embedded Linux - \textsl{C, Embedded Linux} \\
-\activite{Distributed}  & Distributed hash table design and development - \textsl{C, unix sockets, concurrency, distributed} \\
+% \begin{rubriquetableau}[2.5cm]{Representative school projects}
+% \activite{Embedded OS}  & Embedded MIPS multitask operating system with kernel/user space - \textsl{C, assembly, syscalls, irq} \\
+% \activite{Linux Driver} & FPGA network card driver on an embedded Linux - \textsl{C, Embedded Linux} \\
+% \activite{Distributed}  & Distributed hash table design and development - \textsl{C, unix sockets, concurrency, distributed} \\
 
 %2010\textsl{ - 1 mois}  & \activite{Système d'exploitation à temps partagé pour une carte programmable FPGA}\\
 %\group{Binôme}          & \comment{\hs Réalisation en C d'un OS embarqué gérant la concurrence et séparation noyau/utilisateur.}\\
-\end{rubriquetableau}
+%\end{rubriquetableau}
 
 
 \begin{rubriquetableau}[2.5cm]{Technical skills}
-\activite{Languages}    & \comment{C, Python, Assembly, Bash}\\
+\activite{Languages}    & \comment{Low level concurrent C, Python, Bash, Assembly}\\
                        %& \comment{Notions~:\,C++, Objective-C~-~iOS, Java, \LaTeX, {SystemC~-~TLM}, VHDL}\\
-\activite{Tools}        & \comment{GNU/Linux, Advanced Git, Yocto, Jenkins, Terminal/vim, Makefile}\\
+\activite{Tools}        & \comment{GNU/Linux, Advanced git, Yocto, Jenkins, GNUMake, Terminal fluent, vim}\\
 \activite{Testing}      & \comment{Unit and integration tests, setup of an on target CI process, test and code coverage reports}
 \end{rubriquetableau}
 
